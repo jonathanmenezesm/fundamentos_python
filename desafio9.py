@@ -12,3 +12,4 @@ print('{}x7: {}'.format(n, n*7))
 print('{}x8: {}'.format(n, n*8))
 print('{}x9: {}'.format(n, n*9))
 print('{}x10: {}'.format(n, n*10))
+

@@ -1,4 +1,4 @@
-# 1º desafio faça um programa que leio um numero inteiro e mostre na tela o seu sucessor e antecessor
+# desafio 5 faça um programa que leio um numero inteiro e mostre na tela o seu sucessor e antecessor
 
 
 
