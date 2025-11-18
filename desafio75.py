@@ -12,7 +12,10 @@ tupla = (
 )
 
 # A) Quantas vezes apareceu o valor 9
-print(f'O valor 9 apareceu {tupla.count(9)} vezes.')
+if 9 in tupla:
+    print(f'O valor 9 apareceu {tupla.count(9)} vezes.')
+else:
+    print('O número 9 não foi digitado.')
 
 # B) Em que posição foi digitado o primeiro valor 3
 if 3 in tupla:
