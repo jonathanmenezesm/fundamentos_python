@@ -6,8 +6,12 @@ print('''-----------------------------------------
 
 saque = int(input('Digite o valor que você deseja sacar: '))
 cedulas = [50, 20, 10, 1]
-for valor in cedulas:
+i = 0
+
+while saque > 0 and i < len(cedulas):
+    valor = cedulas[i]
     quantidade = saque // valor
-    saque = saque - (quantidade * valor)
     if quantidade > 0:
         print(f'{quantidade} cédula(s) de R${valor}')
+        saque -= quantidade * valor
+    i += 1
