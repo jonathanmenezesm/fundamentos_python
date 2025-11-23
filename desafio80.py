@@ -5,7 +5,6 @@ lista = []
 while len(lista) < 5:
     valor = int(input('Digite um valor: '))
     if valor not in lista:
-        # se a lista estiver vazia, adiciona direto
         if len(lista) == 0:
             lista.append(valor)
             print(f'O valor {valor} foi adicionado no início da lista.')
@@ -20,5 +19,4 @@ while len(lista) < 5:
                 print(f'O valor {valor} foi adicionado no final da lista.')
     else:
         print(f'O valor {valor} já foi adicionado, tente outro.')
-
 print(f'Lista final ordenada: {lista}')
