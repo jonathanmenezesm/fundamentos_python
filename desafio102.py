@@ -4,6 +4,18 @@
 
 
 def fatorial(n, show=False):
+    """
+        Calcula o fatorial de um número.
+
+        Parâmetros:
+        n (int, obrigatório): O número cujo fatorial será calculado.
+        show (bool, opcional): Se True, mostra o processo de cálculo na tela.
+                               Se False, apenas retorna o resultado.
+
+        Retorna:
+        int: O valor do fatorial de n.
+        """
+
     resultado = 1
     for x in range(n, 0, -1):
         resultado *= x
@@ -11,7 +23,7 @@ def fatorial(n, show=False):
             print(x, end=' x ' if x > 1 else ' = ')
     print(f'{n}! = {resultado}')
 
-fatorial(int(input("Deseja o fatorial de: ")),show=False)
-
+# fatorial(int(input("Deseja o fatorial de: ")),show=False)
+help(fatorial)
 
 
