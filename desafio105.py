@@ -6,7 +6,7 @@
 # - A situação (opcional)
 # Adicione também as docstrings da função.
 
-def notas():
+def notas(*n, situacao=False):
     """
     Função notas()
     Recebe várias notas de alunos e retorna um dicionário com informações:
