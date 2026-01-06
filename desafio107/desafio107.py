@@ -1,7 +1,7 @@
 # Crie um módulo chamado moeda.py que tenha as funções incorporadas aumentar(), diminuir(), dobro() e metade().
 # Faça também um programa que importe esse módulo e use algumas dessas funções.
 
-from Modulos.moeda import aumentar, diminuir, dobro, metade
+from desafio107.moeda import aumentar, diminuir, dobro, metade
 
 numero = float(input('Digite um preço: R$'))
 print(f'A metade de {numero} é {metade(numero)}')
