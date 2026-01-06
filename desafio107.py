@@ -3,7 +3,8 @@
 
 from Modulos.moeda import aumentar, diminuir, dobro, metade
 
-aumentar(100, 10)
-diminuir(100, 10)
-dobro(100)
-metade(100)
+numero = float(input('Digite um preço: R$'))
+print(f'A metade de {numero} é {metade(numero)}')
+print(f'O dobro de {numero} é {dobro(numero)}')
+print(f'Aumentando em 10%, temos {aumentar(numero, 10)}')
+print(f'Reduzindo em 10%, temos {diminuir(numero, 10)}')
