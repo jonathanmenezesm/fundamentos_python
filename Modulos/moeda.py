@@ -1,25 +1,27 @@
+# desafio107
 # Crie um módulo chamado moeda.py que tenha as funções incorporadas aumentar(), diminuir(), dobro() e metade().
 # Faça também um programa que importe esse módulo e use algumas dessas funções.
 
-def aumentar(numero, porcento):
+#desafio 108
+# Adapte o código do desafio 107, criando uma função adicional chamada moeda() que consiga mostrar os valores como um valor monetário formatado.
+
+def aumentar(numero=0, porcento=0):
     porcentagem = (porcento / 100) * numero
     aumento = numero + porcentagem
-    print(f'O número {numero} + {porcento}% é {aumento}')
     return aumento
 
 def diminuir(numero, porcento):
     porcentagem = (porcento / 100) * numero
     diminuido = numero - porcentagem
-    print(f'O número {numero} - {porcento}% é {diminuido}')
     return diminuido
 
 def dobro(numero):
     dobrado = numero * 2
-    print(f'O dobro de {numero} = {dobrado}')
-    return dobro
+    return dobrado
 
 def metade(numero):
-    metade = numero / 2
-    print(f'Metade de {numero} = {metade}')
-    return metade
+    dividido = numero / 2
+    return dividido
 
+def moeda(valor):
+    formatados = aumentar(numero, porcento)
