@@ -13,7 +13,7 @@ def aumentar(numero=0, porcento=0, formato=False):
     """
     porcentagem = (porcento / 100) * numero
     aumento = numero + porcentagem
-    return aumento if formato == False else moeda(numero)
+    return aumento if formato == False else moeda(aumento)
 
 
 def diminuir(numero=0, porcento=0, formato=False):
@@ -31,7 +31,7 @@ def diminuir(numero=0, porcento=0, formato=False):
     """
     porcentagem = (porcento / 100) * numero
     diminuido = numero - porcentagem
-    return diminuido if formato == False else moeda(numero)
+    return diminuido if formato == False else moeda(diminuido)
 
 
 def dobro(numero=0, formato=False):
@@ -47,7 +47,7 @@ def dobro(numero=0, formato=False):
         float | str: Dobro do valor, como número ou string formatada.
     """
     dobrado = numero * 2
-    return dobrado if not formato else moeda(numero)
+    return dobrado if not formato else moeda(dobrado)
 
 
 def metade(numero=0, formato=False):
@@ -63,7 +63,7 @@ def metade(numero=0, formato=False):
         float | str: Metade do valor, como número ou string formatada.
     """
     dividido = numero / 2
-    return dividido if not formato else moeda(numero)
+    return dividido if not formato else moeda(dividido)
 
 
 def moeda(numero=0, moeda='R$'):
@@ -78,3 +78,17 @@ def moeda(numero=0, moeda='R$'):
         str: Valor formatado como moeda, com duas casas decimais e vírgula como separador.
     """
     return f'{moeda}{numero:.2f}'.replace('.', ',')
+
+def resumo(numero=0, aumento=10, reducao=10):
+    print(f'{"-" * 30}')
+    print('RESUMO DO VALOR'.center(30))
+    print(f'{"-" * 30}')
+    print(f'Preço analisado: \t{moeda(numero)}')
+    print(f'Dobro do preço: \t{dobro(numero, True)}')
+    print(f'Metade do preço: \t{metade(numero, True)}')
+    print(f'Aumento de {aumento}%: \t{aumentar(numero, aumento, True)}')
+    print(f'Redução de {reducao}%: \t{diminuir(numero, reducao, True)}')
+
+
+
+
