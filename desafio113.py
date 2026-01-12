@@ -19,7 +19,7 @@ def leiaInt(msg):
     while True:
         try:
             inteiro = int(input(msg))
-        except ValueError:
+        except (ValueError, TypeError):
             print('\033[0;31mERRO! Digite um número inteiro válido.\033[m')
         except KeyboardInterrupt:
             print('\n\033[0;31mEntrada interrompida pelo usuário.\033[m')
