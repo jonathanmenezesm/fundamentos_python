@@ -4,9 +4,8 @@
 from desafio115.lib.arquivo import *
 from desafio115.lib.interface import *
 from time import sleep
-
 from desafio115.lib.interface import leiaInt
-from desafio115.lib.interface.bkp import cadastrarPessoa
+
 
 arq = 'dados.txt'
 if not arquivoExiste(arq):
